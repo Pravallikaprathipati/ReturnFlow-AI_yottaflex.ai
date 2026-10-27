@@ -1,0 +1,6 @@
+issue_id,entity_type,entity_id,issue_type,expected_decision,details
+GT-001,return_line,RMAL-RMA-2026-000001-01,quantity_exceeds_purchase,reject,Requested quantity deliberately exceeds purchased quantity.
+GT-002,refund,REF-2026-000002,refund_exceeds_paid_amount,block_refund,Attempted amount exceeds the source order-line paid amount.
+GT-003,inventory_disposition,DISP-2026-000002,restock_before_inspection,block_inventory_movement,Disposition timestamp precedes inspection; movement is blocked.
+GT-004,return_request,RMA-2026-000004,late_return_without_override,reject_without_override,Request date is outside its category window and has no override.
+GT-005,refund,REF-2026-000005,duplicate_refund_attempt,block_duplicate_payout,A second payout attempt is recorded but never paid.

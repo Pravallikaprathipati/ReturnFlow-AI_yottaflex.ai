@@ -1,0 +1,143 @@
+{
+  "checks": [
+    {
+      "detail": "0 foreign-key violations",
+      "name": "foreign_keys",
+      "passed": true
+    },
+    {
+      "detail": "0 mismatches",
+      "name": "order_line_arithmetic",
+      "passed": true
+    },
+    {
+      "detail": "0 mismatches",
+      "name": "order_totals",
+      "passed": true
+    },
+    {
+      "detail": "0 lines reference a different order",
+      "name": "return_line_parent_order",
+      "passed": true
+    },
+    {
+      "detail": "1 labelled quantity exception(s)",
+      "name": "quantity_over_purchase_labelled",
+      "passed": true
+    },
+    {
+      "detail": "1 purchased line(s) exceed cumulative quantity",
+      "name": "cumulative_return_quantity",
+      "passed": true
+    },
+    {
+      "detail": "0 mismatches",
+      "name": "authorization_statuses",
+      "passed": true
+    },
+    {
+      "detail": "0 mismatches",
+      "name": "return_eligibility",
+      "passed": true
+    },
+    {
+      "detail": "0 arithmetic mismatches; 0 overpayments",
+      "name": "refund_reconciliation",
+      "passed": true
+    },
+    {
+      "detail": "0 date/lifecycle errors; 0 missing authorizations",
+      "name": "date_ordering_and_authorization_coverage",
+      "passed": true
+    },
+    {
+      "detail": "0 unblocked early movements; 1 blocked; 0 condition mismatches; 0 inspection-line mismatches",
+      "name": "disposition_controls",
+      "passed": true
+    },
+    {
+      "detail": "0 duplicate paid line(s); 1 blocked attempts",
+      "name": "duplicate_payout_blocked",
+      "passed": true
+    },
+    {
+      "detail": "0 invalid event date(s); 0 unordered event(s)",
+      "name": "event_history",
+      "passed": true
+    },
+    {
+      "detail": "5 labels; one per required scenario: True",
+      "name": "ground_truth_coverage",
+      "passed": true
+    },
+    {
+      "detail": "missing labels: []",
+      "name": "ground_truth_references",
+      "passed": true
+    },
+    {
+      "detail": "incorrect anomaly labels or outcomes: []",
+      "name": "ground_truth_semantics",
+      "passed": true
+    }
+  ],
+  "checks_passed": 16,
+  "checks_total": 16,
+  "ground_truth_coverage": {
+    "duplicate_refund_attempt": 1,
+    "late_return_without_override": 1,
+    "quantity_exceeds_purchase": 1,
+    "refund_exceeds_paid_amount": 1,
+    "restock_before_inspection": 1
+  },
+  "metrics": {
+    "approval_rate_by_line": 0.5364,
+    "blocked_refund_attempts": 2,
+    "completed_disposition_counts": {
+      "quarantine": 684,
+      "refurbish": 2920,
+      "restock": 331,
+      "scrap": 122
+    },
+    "inspection_condition_counts": {
+      "minor_damage": 2920,
+      "missing_parts": 684,
+      "sellable": 332,
+      "unsafe": 122
+    },
+    "inspection_coverage": 0.5072,
+    "labelled_anomaly_count": 5,
+    "order_line_category_counts": {
+      "apparel": 26094,
+      "electronics": 18776,
+      "final_sale": 11286,
+      "home": 19091
+    },
+    "paid_refund_total_cents": 56064842,
+    "partial_authorization_count": 631,
+    "request_reason_counts": {
+      "damaged": 1247,
+      "exchange": 1234,
+      "no_longer_needed": 1295,
+      "wrong_item": 1224
+    },
+    "shipment_outcomes": {
+      "missing": 70,
+      "received": 2821
+    }
+  },
+  "row_counts": {
+    "customers": 10000,
+    "inspections": 4058,
+    "inventory_dispositions": 4058,
+    "order_lines": 75247,
+    "orders": 30000,
+    "refunds": 4060,
+    "return_authorizations": 5000,
+    "return_events": 27888,
+    "return_lines": 8000,
+    "return_requests": 5000,
+    "return_shipments": 2891
+  },
+  "status": "passed"
+}

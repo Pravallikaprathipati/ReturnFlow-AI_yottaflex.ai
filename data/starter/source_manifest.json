@@ -1,0 +1,7 @@
+{
+  "data_origin": "Entirely synthetic; generated locally by this repository.",
+  "external_sources": [],
+  "license_or_terms": "No external dataset or third-party source data is used.",
+  "personal_data": "No real people, contact details, or externally sourced identifiers.",
+  "transformations": "Deterministic seeded generation; currency represented as integer cents."
+}

@@ -1,0 +1,39 @@
+{
+  "checksums_sha256": {
+    "customers.csv": "76915528eaf3d9e11071821726084e65a0836a8f4369f7061542e1f447dc321e",
+    "ground_truth.csv": "d139d3931907570bc6bdeb4d6291c6ff08efa71fe870592a6715a86054c1365a",
+    "ground_truth.json": "714c5fdbd1b1a97106a8a5700760e2402b7f2cd6a7059b34094ae9192afdcb7e",
+    "inspections.csv": "42ec8548b98c4fd0110e3fd4196fc346ec7d648d67db902bc99e9de61b1d14fd",
+    "inventory_dispositions.csv": "61d0c52866ec574c887454846d86a9be4f941c19ed02c9363cc5ec0c7fd7e2be",
+    "order_lines.csv": "c0fe24119d657f0bf677cf519b311aef3bbec05a58a18ffd155603b4270920e0",
+    "orders.csv": "b279458d2679496bf6ac507ea37e64405ea93ecb01887c2694b13f4b9eb7cde0",
+    "refunds.csv": "3f324ca0b2e482b1bba1fe291911a8f26b4c8c83ab9e7bf0a00b16d04f94b267",
+    "return_authorizations.csv": "939978637c015de146fa30b40d46f799e10e929f5ed9f825c84bc8711b59d990",
+    "return_events.csv": "9654f3f4704bd736e0c1f151f3a63f5b1aed4e9b1a9fb6a4c760e9044d4607ee",
+    "return_lines.csv": "2815bab4dd3f59bb2040cf6b38fe93e5d075dfbd8b4c67258a20fafd7a9787a2",
+    "return_requests.csv": "83e61198af47fecce93d7c0679c8759370fdfae17e82c4aeeaf9411913dfe625",
+    "return_shipments.csv": "7e1cdfbe1c7a8772f8982afca5f802c00c60478ad9d3c0aca0fe8600f57af2a3",
+    "returns.sqlite3": "e0b4d92196dc7847672c9ffa1bb6da74843ef022561bc26537fd3765f7603dda",
+    "schema.sql": "be31c286fff94117dfc6e8dfd02143ac7a8916c8416b5e3b6d969b59b8da6813",
+    "seed.sql": "cd381e3a362215d2a49218bdedd5bf327bff34051cc9fa1a3fb086cd8e4fd436",
+    "source_manifest.json": "5aa85ee051b5650be40086276a9391a1a50d57bd27d9221c4fc084a985f17a0c"
+  },
+  "generated_at": "deterministic synthetic data; timestamps are domain data, not wall-clock time",
+  "generator": "returns-workflow",
+  "row_counts": {
+    "customers": 100,
+    "ground_truth": 5,
+    "inspections": 38,
+    "inventory_dispositions": 38,
+    "order_lines": 731,
+    "orders": 300,
+    "refunds": 40,
+    "return_authorizations": 50,
+    "return_events": 271,
+    "return_lines": 80,
+    "return_requests": 50,
+    "return_shipments": 29
+  },
+  "seed": 20261022,
+  "version": "1.0.0"
+}

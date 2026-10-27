@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "returns-workflow"
+version = "1.0.0"
+description = "Deterministic synthetic returns workflow and policy simulator"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = []
+
+[project.scripts]
+returns-workflow = "returns_workflow.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["returns_workflow*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

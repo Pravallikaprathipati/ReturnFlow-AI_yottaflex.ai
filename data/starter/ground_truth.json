@@ -1,0 +1,42 @@
+[
+  {
+    "details": "Requested quantity deliberately exceeds purchased quantity.",
+    "entity_id": "RMAL-RMA-2026-000001-01",
+    "entity_type": "return_line",
+    "expected_decision": "reject",
+    "issue_id": "GT-001",
+    "issue_type": "quantity_exceeds_purchase"
+  },
+  {
+    "details": "Attempted amount exceeds the source order-line paid amount.",
+    "entity_id": "REF-2026-000002",
+    "entity_type": "refund",
+    "expected_decision": "block_refund",
+    "issue_id": "GT-002",
+    "issue_type": "refund_exceeds_paid_amount"
+  },
+  {
+    "details": "Disposition timestamp precedes inspection; movement is blocked.",
+    "entity_id": "DISP-2026-000002",
+    "entity_type": "inventory_disposition",
+    "expected_decision": "block_inventory_movement",
+    "issue_id": "GT-003",
+    "issue_type": "restock_before_inspection"
+  },
+  {
+    "details": "Request date is outside its category window and has no override.",
+    "entity_id": "RMA-2026-000004",
+    "entity_type": "return_request",
+    "expected_decision": "reject_without_override",
+    "issue_id": "GT-004",
+    "issue_type": "late_return_without_override"
+  },
+  {
+    "details": "A second payout attempt is recorded but never paid.",
+    "entity_id": "REF-2026-000005",
+    "entity_type": "refund",
+    "expected_decision": "block_duplicate_payout",
+    "issue_id": "GT-005",
+    "issue_type": "duplicate_refund_attempt"
+  }
+]
